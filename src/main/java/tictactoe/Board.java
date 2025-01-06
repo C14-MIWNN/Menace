@@ -15,8 +15,8 @@ public class Board {
         board = new char[BOARD_SIZE][BOARD_SIZE];
 
         // initialise the board (can be done more easily, this is also to illustrate the double for loop)
-        for (int row = 0; row < board.length; row++) {
-            Arrays.fill(board[row], TicTacToeLauncher.EMPTY);
+        for (char[] chars : board) {
+            Arrays.fill(chars, TicTacToeLauncher.EMPTY);
         }
 
         turn = 0;
